@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model User;
+<div class="text-center">
+    <h1>Bienvenido @Model.Nombre @Model.Apellido</h1>
+    <h1 class="display-4">Naciste el día: @Model.FechaNacimiento</h1>
+</div>

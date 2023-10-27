@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model User;
+
+<div class="text-center border border-primary">
+    <form class="m-3" method="post" action="procesar">
+        <label asp-for="Nombre">Nombre: </label>
+        <input asp-for="Nombre">
+        <span asp-validation-for="Nombre"></span>
+        <br>
+        <label asp-for="Apellido">Apellido: </label>
+        <input asp-for="Apellido">
+        <span asp-validation-for="Apellido"></span>
+        <br>
+        <label asp-for="FechaNacimiento">Fecha Nacimiento: </label>
+        <input asp-for="FechaNacimiento">
+        <span asp-validation-for="FechaNacimiento"></span>
+        <br>
+        <button class=" btn btn-primary my-3">Agregar</button>
+    </form>
+</div>
